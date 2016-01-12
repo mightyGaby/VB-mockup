@@ -5,7 +5,7 @@ function showVideo(){
     $('#highlight-reel').removeClass('hide');
     $('.responsive-video')
       .addClass('vid-init');
-    $('#index-banner').addClass('dark-overlay');
+    $('#index-banner').addClass('dark-overlay, valign-wrapper');
       if (video.paused) {
           video.play();
       }
@@ -33,7 +33,7 @@ function hideVideo(){
         // container.hide();
               $('#highlight-reel').addClass('hide');
               $('.responsive-video').removeClass('vid-init');
-              $('#index-banner').removeClass('dark-overlay');
+              $('#index-banner').removeClass('dark-overlay, valign-wrapper');
               if (!video.paused) {
                   video.pause();
               }
