@@ -89,11 +89,12 @@ p {
 }
 #highlight-reel {
   padding: 0;
-  margin: 0;
+  margin-left: 5%;
+  margin-top: 15%;
 }
-video {
-  width: 100%;
-}
+/*.highlight-reel video {
+  margin-top: 10%;
+}*/
 
 #resume {
   transform: none;
