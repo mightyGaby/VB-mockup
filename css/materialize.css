@@ -3359,6 +3359,7 @@ nav ul a span.badge {
 
 /* This is needed for some mobile phones to display the Google Icon font properly */
 .material-icons {
+  color: #F29C8C;
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: 'liga';
      -moz-font-feature-settings: 'liga';
@@ -3374,6 +3375,7 @@ nav ul a span.badge {
 
 [class^="mdi-"], [class*="mdi-"] {
   speak: none;
+  color: #F29C8C;
   display: inline-block;
   font-family: "Material-Design-Icons";
   font-style: normal;
@@ -6670,7 +6672,7 @@ nav ul a span.badge {
 }
 
 .section {
-  padding-top: 1rem;
+  /*padding-top: 1rem;*/
   padding-bottom: 1rem;
 }
 

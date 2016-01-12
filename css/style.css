@@ -67,8 +67,18 @@ p {
   top: -200px;
 }
 #index-banner .parallax{
-  background: linear-gradient(#95AD81, #799465);
-
+  /*background: linear-gradient(#95AD81, #799465);*/
+  background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to right, #95AD81 0%, #799465 90%);
+    background-blend-mode: screen, multiply, darken;
+  /*background:
+    linear-gradient(#799465 10%, #95AD81 100%),
+    linear-gradient(to right, #799465 0%, #799465 100%),
+    url('image.jpg') 30px,
+    url('image.jpg') 20px;
+  background-blend-mode: screen, difference, lighten;*/
+}
+#index-banner .section .container .row h1.header{
+  font-weight: 100;
 }
 .parallax-container.short{
   min-height: 450px;
@@ -80,7 +90,17 @@ p {
 }
 
 .fa-video-camera, .fa-volume-up {
-  font-size: 5em;
+  font-size: 3em;
+  margin-left: 70px;
+  margin-right: 30px;
+}
+.media-wrapper {
+  /*padding-left: 15%;*/
+  float: left;
+}
+
+footer.page-footer {
+  background-color: #799465;
 }
 
 #media {
@@ -95,7 +115,20 @@ p {
 /*.highlight-reel video {
   margin-top: 10%;
 }*/
+#about-img img{
+min-width: 100%;
+  /*min-width: 650px;*/
+  /*background-image: url('../img/andy in LA.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -250px;*/
+}
+#about-blurb{
 
+  background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to right, grey 0%, #F29C8C 90%);
+    background-blend-mode: screen, difference, lighten;
+
+}
 #resume {
   transform: none;
   width: 100%;
