@@ -44,7 +44,7 @@ p {
 }
 .landing-content{
   padding-left: 10%;
-  /*margin-top: 5%;*/
+  margin-top: 2%;
 }
 
 .parallax-container.blurr{
@@ -81,7 +81,7 @@ p {
     url('image.jpg') 20px;
   background-blend-mode: screen, difference, lighten;*/
 }
-#index-banner .section .container .row h1.header{
+#index-banner .section  .row h1.header{
   font-weight: 100;
 }
 .parallax-container.short{
