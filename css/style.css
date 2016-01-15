@@ -56,8 +56,8 @@ p {
 }
 
 
-#landing.parallax-container .container {
-  background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to top, grey 0%, #F29C8C 90%);
+#landing .parallax-container.right-tile {
+  background: linear-gradient(#530F00 0%, grey 90%), linear-gradient(to top, grey 0%, #F29C8C 90%);
     background-blend-mode: screen, difference, lighten;
 }
 
@@ -76,7 +76,7 @@ p {
 #index-banner .parallax{
   /*background: linear-gradient(#95AD81, #799465);*/
   background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to right, #95AD81 0%, #799465 90%);
-    background-blend-mode: screen, multiply, darken;
+    background-blend-mode: screen, difference, lighten;
   /*background:
     linear-gradient(#799465 10%, #95AD81 100%),
     linear-gradient(to right, #799465 0%, #799465 100%),
@@ -93,7 +93,11 @@ p {
 }
 
 .dark-overlay{
-  background-color: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
+}
+#landing .parallax-container.right-tile.dark-overlay{
+    background: linear-gradient(#530F00 0%, darkgrey 90%), linear-gradient(to top, slategrey 10%, #5F5452  90%);
+    background-blend-mode: screen, difference, lighten;
 }
 
 .fa-video-camera, .fa-volume-up {
