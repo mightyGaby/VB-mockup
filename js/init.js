@@ -1,14 +1,15 @@
 var video = $(".responsive-video")[0]; // id or class of your <video> tag
 
 function showVideo(){
-  $('.fa-video-camera').click(function(){
+  $('.fa-ticket').click(function(){
     $('#highlight-reel').removeClass('hide');
     $('.responsive-video')
       .addClass('vid-init');
-    $('#index-banner').addClass('dark-overlay, valign-wrapper');
+    $('#index-banner, .parallax-container').addClass('dark-overlay');
       if (video.paused) {
           video.play();
       }
+
   })
 
   // $(document).click(function(e){
@@ -33,7 +34,7 @@ function hideVideo(){
         // container.hide();
               $('#highlight-reel').addClass('hide');
               $('.responsive-video').removeClass('vid-init');
-              $('#index-banner').removeClass('dark-overlay, valign-wrapper');
+              $('#index-banner, .parallax-container').removeClass('dark-overlay');
               if (!video.paused) {
                   video.pause();
               }
@@ -47,7 +48,7 @@ function hideVideo(){
     hideVideo();
 
     $('.modal-trigger').leanModal();
-
+    $(".button-collapse").sideNav();
     $('.button-collapse').sideNav();
     $('.parallax').parallax();
     $('.carousel').carousel();

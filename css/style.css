@@ -38,7 +38,7 @@ p {
 }
 .parallax-container.left-tile, .parallax-container.right-tile {
   width: 50%;
-  float: right;
+  float: left;
   height: 100%;
   min-height: 850px;
 }
@@ -70,16 +70,14 @@ p {
   position: relative;
   top: -200px;
 }
-#index-banner .parallax{
-  /*background: linear-gradient(#95AD81, #799465);*/
-  background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to right, #95AD81 0%, #799465 90%);
-    background-blend-mode: screen, multiply, darken;
-  /*background:
-    linear-gradient(#799465 10%, #95AD81 100%),
-    linear-gradient(to right, #799465 0%, #799465 100%),
-    url('image.jpg') 30px,
-    url('image.jpg') 20px;
-  background-blend-mode: screen, difference, lighten;*/
+#index-banner .parallax-container.right-tile{
+  background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to bottom, grey 0%, #F29C8C 90%);
+    background-blend-mode: screen, difference, lighten;
+
+    /*background: linear-gradient(#120401 0%, slategrey 90%), linear-gradient(to top,  #F29C8C 0%, grey 90%);
+      background-blend-mode: screen, difference, lighten;*/
+
+
 }
 #index-banner .section  .row h1.header{
   font-weight: 100;
@@ -93,18 +91,20 @@ p {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.fa-video-camera, .fa-volume-up {
-  font-size: 3em;
-  margin-left: 70px;
-  margin-right: 30px;
+.fa-video-camera, .fa-volume-up, .fa-ticket, .fa-female  {
+  font-size: 2.5em;
+  margin-left: 25%;
+  /*margin-right: 30px;*/
 }
+
 .media-wrapper {
   /*padding-left: 15%;*/
   float: left;
 }
 
 footer.page-footer {
-  background-color: #799465;
+  background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to right, grey 0%, #F29C8C 90%);
+    background-blend-mode: screen, difference, lighten;
 }
 
 #media {
@@ -129,8 +129,9 @@ min-width: 100%;
 }
 #about-blurb{
 
-  background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to right, grey 0%, #F29C8C 90%);
-    background-blend-mode: screen, difference, lighten;
+    /*background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to right, #95AD81 0%, #799465 90%);
+      background-blend-mode: screen, multiply, darken;*/
+
 
 }
 #resume {

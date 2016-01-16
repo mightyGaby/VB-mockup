@@ -16,36 +16,109 @@
 </head>
 <body>
 
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper white">
-        <a href="#" class="brand-logo left">VERONICA BRUCE</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#index-banner">Video & Audio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#credentials">Resume</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  <!-- <div class="navbar-fixed white">
 
-  <!-- <nav class="white" role="navigation">
+    <nav>
+  <div class="white nav-wrapper">
+    <a href="#!" class="brand-logo">VERONICA BRUCE</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#index-banner">Video & Audio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#credentials">Resume</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="#index-banner">Video & Audio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#credentials">Resume</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+  </div> -->
+
+  <div class="navbar-fixed white">
+
+  <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a href="#!" class="brand-logo">VERONICA BRUCE</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#index-banner">Video & Audio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#credentials">Resume</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#index-banner">Video & Audio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#credentials">Resume</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-  </nav> -->
+  </nav>
+</div>
+
 
   <div id="index-banner" class="parallax-container">
+
+    <div class="parallax-container valign-wrapper left-tile">
+      <div class="parallax"><img src="img/VB2.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+    <div class="parallax-container valign-wrapper right-tile ">
+      <!-- <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div> -->
+      <div class="landing-content">
+        <div class="row left">
+          <h1 class="header left white-text text-lighten-2">Veronica Bruce</h1>
+          <!-- video player   -->
+            <div id="highlight-reel" class="row center hide">
+              <video class="col s10 left responsive-video z-depth-1" controls>
+                <source src="media/VeronicaReel4.mov#t=2" type="video/mp4">
+                  Your browser does not support the <code>video</code> element.
+              </video>
+            </div>
+
+          <h5 class="header col s12 light">Actor | Comedian</h5>
+        </div>
+        <div class="row left">
+          <p class="col s10 left"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        </div>
+        <!-- <div  class="media-wrapper  row left">
+          <i class="fa fa-video-camera center"></i>
+          <h5  class="header col s12 light">Watch video reel </h5>
+        </div>
+        <div class="media-wrapper  row left">
+          <i class="fa fa-volume-up center"></i>
+          <h5 class="header col s12 light">Play audio reel </h5>
+        </div> -->
+
+        <div class="media-wrapper row left">
+
+          <div class="col s4">
+            <i class="fa fa fa-female "></i>
+            <p  class="header col s12 light">Watch Standup</p>
+          </div>
+          <div class="col s4">
+            <i class="fa fa-ticket"></i>
+            <p  class="header col s12 light">Watch video reel </p>
+          </div>
+          <div class="col s4">
+            <i class="fa fa-volume-up "></i>
+            <p class="header col s12 light">Play audio reel </p>
+          </div>
+
+    </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot ">
       <div id="highlight-reel" class="row center hide">
         <video class="col s7 center responsive-video z-depth-3" controls>
@@ -63,19 +136,17 @@
           <p class="col s6 left"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
         </div>
         <div  class="media-wrapper  row left">
-          <!-- <h1 class="header left white-text text-lighten-2">Veronica Bruce</h1> -->
           <i class="fa fa-video-camera center"></i>
           <h5  class="header col s12 light">Watch video reel </h5>
         </div>
         <div class="media-wrapper  row left">
-          <!-- <h1 class="header left white-text text-lighten-2">Veronica Bruce</h1> -->
           <i class="fa fa-volume-up center"></i>
           <h5 class="header col s12 light">Play audio reel </h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img id="main-headshot" src="img/VB6.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+    <div class="parallax"><img id="main-headshot" src="img/VB2.jpg" alt="Unsplashed background img 1"></div>
+  </div> -->
 
 
 <!-- <div id="landing" class="parallax-container">
@@ -128,95 +199,73 @@
       <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
     </div>
   </section> -->
-
-
   <div class="full">
     <div class="section">
 
     <section id="about" class="">
-      <div id="about-blurb" class="parallax-container short valign-wrapper right-tile">
+      <!-- <div id="about-blurb" class="parallax-container short valign-wrapper right-tile">
         <div class="section no-pad-bot">
           <div class="container">
             <div class="row center">
               <h3 class="header col s12">About Me</h3>
-              <p class="col s12 center flow-text"> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p class="col s12 center flow-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+              <p class="col s12 center "> Veronica Bruce is an actor and stand up comedian.
 
+                  Moving from Chicago to Los Angeles, she is open to the possibilities in the new year.
+
+                  She can be found riding her scooter Smokey Anderson (that’s right, her scooter has a name) around the city.
+
+                  She likes reading Rumi and taking long walks on the beach - rock hunting.
+                </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="parallax-container short valign-wrapper left-tile ">
+        <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 2"></div>
+      </div> -->
+      <div class="parallax-container short valign-wrapper">
         <div class="section no-pad-bot">
-          <!-- <div class="container">
-            <div class="row center">
-              <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <div class="container">
+            <div class="row left">
+              <h3 class="header col s12">About Me</h3>
+              <p class="col s6 left"> Veronica Bruce is an actor and stand up comedian.
+
+                  Moving from Chicago to Los Angeles, she is open to the possibilities in the new year.
+
+                  She can be found riding her scooter Smokey Anderson (that’s right, her scooter has a name) around the city.
+
+                  She likes reading Rumi and taking long walks on the beach - rock hunting.
+                </p>
+              <!-- <p class="col s12 center "> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p> -->
             </div>
-          </div> -->
+          </div>
         </div>
-       <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 2"></div>
+       <div class="parallax"><img src="img/art installation2.jpg" alt="Unsplashed background img 2"></div>
       </div>
 
     </section>
-
-      <div id="gallery" class="">
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="img/VB1.jpg"></a>
-          <a class="carousel-item" href="#two!"><img src="img/VB2.jpg"></a>
-          <a class="carousel-item" href="#three!"><img src="img/VB3.jpg"></a>
-          <a class="carousel-item" href="#four!"><img src="img/VB4.jpg"></a>
-          <a class="carousel-item" href="#five!"><img src="img/VB5.jpg"></a>
-        </div>
-        <!-- <div class="carousel carousel-slider">
-          <a class="carousel-item" href="#one!"><img src="img/VB1.jpg"></a>
-          <a class="carousel-item" href="#two!"><img src="img/VB2.jpg"></a>
-          <a class="carousel-item" href="#three!"><img src="img/VB3.jpg"></a>
-          <a class="carousel-item" href="#four!"><img src="img/VB4.jpg"></a>
-          <a class="carousel-item" href="#five!"><img src="img/VB5.jpg"></a>
-      </div> -->
-
-        </div>
-
-      <!--   Icon Section   -->
-
-      <div class="container">
-        <div class="section">
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Why VB is Awesome</h5>
-
-            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">Great Hair & Smile Too!</h5>
-
-            <p class="light">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          </div>
-        </div>
+    <div id="gallery" class="">
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="img/VB1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="img/VB2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="img/VB3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="img/VB4.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/VB5.jpg"></a>
       </div>
-    </div>
-  </div>
+      <!-- <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="img/VB1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="img/VB2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="img/VB3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="img/VB4.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/VB5.jpg"></a>
+    </div> -->
+
+      </div>
+
 </div>
 </div>
 
 <div id="credentials" class="full">
   <div class="parallax-container valign-wrapper left-tile">
-    <div class="parallax"><img src="img/VB3.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="img/VB6.jpg" alt="Unsplashed background img 2"></div>
   </div>
   <div class="parallax-container valign-wrapper right-tile ">
     <!-- <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div> -->
@@ -226,14 +275,13 @@
   </div>
 </div>
 
-
-  <div class="container">
+  <!-- <div class="container">
     <div class="section">
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Me</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h4>Let's go places</h4>
+          <p class="light">Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
         </div>
       </div>
       <div id="contact" class="row">
@@ -267,9 +315,58 @@
           </div>
         </div>
       </form>
+      <!-- <div class="col s6">
+        <img src="background1.jpg" alt="Unsplashed background img 2">
+      </div> -->
     </div>
+    </div>
+  </div> -->
 
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4>Let's go places</h4>
+            <p class="light">email me (veronicabruce@gmail.com) or message me here!</p>
+          </div>
+        </div>
+        <div id="contact" class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+              <label for="disabled">Disabled</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      </div>
     </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
 
