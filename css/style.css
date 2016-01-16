@@ -35,6 +35,7 @@ p {
 }
 .parallax-container .section {
   width: 100%;
+  min-height: 80%;
 }
 .parallax-container.left-tile, .parallax-container.right-tile {
   width: 50%;
@@ -63,6 +64,22 @@ p {
   left: 0;
 }
 
+#landing .parallax-container.right-tile {
+  background: linear-gradient(#530F00 0%, grey 90%), linear-gradient(to top, grey 0%, #F29C8C 90%);
+    background-blend-mode: screen, difference, lighten;
+}
+.dark-overlay{
+  background: rgba(0, 0, 0, 0.4);
+}
+#landing .parallax-container.right-tile.dark-overlay{
+    background: linear-gradient(#530F00 0%, darkgrey 90%), linear-gradient(to top, slategrey 10%, #5F5452  90%);
+    background-blend-mode: screen, difference, lighten;
+}
+
+#contact form {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .parallax img#main-headshot {
   right: 0;
   left: 76%;
@@ -85,10 +102,6 @@ p {
 .parallax-container.short{
   min-height: 450px;
   height: 500px;
-}
-
-.dark-overlay{
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .fa-video-camera, .fa-volume-up, .fa-ticket, .fa-female  {
