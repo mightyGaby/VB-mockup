@@ -2191,7 +2191,7 @@
  *    user zoom.
  */
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto Thin', sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -7410,6 +7410,7 @@ nav ul a {
   display: block;
   padding: 0 15px;
   cursor: pointer;
+  padding-left: 5px;
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
@@ -7419,7 +7420,10 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
 }
 
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  /*background-color: rgba(0, 0, 0, 0.1);*/
+  color: #F29C8C;
+  /*text-decoration: underline;*/
+  font-weight: 800;
 }
 
 nav ul.left {
@@ -7522,7 +7526,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Thin", sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -10497,7 +10501,8 @@ select {
 }
 
 .carousel .carousel-item img {
-  width: 100%;
+  width: auto;
+  height: 350px;
 }
 
 .carousel.carousel-slider {

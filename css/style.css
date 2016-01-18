@@ -27,6 +27,11 @@ p {
   width: 100%;
   height: 100%;
 }
+
+.socicon-imdb {
+  font-size: 30px;
+  padding-top: 5px;
+}
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -106,13 +111,21 @@ p {
 
 .fa-video-camera, .fa-volume-up, .fa-ticket, .fa-female  {
   font-size: 2.5em;
-  margin-left: 25%;
+  /*margin-left: 10%;*/
   /*margin-right: 30px;*/
 }
 
 .media-wrapper {
   /*padding-left: 15%;*/
   float: left;
+}
+
+.media-wrapper .media-btn {
+  color: white;
+}
+
+.media-wrapper .media-btn:hover {
+  color: #666B62;
 }
 
 footer.page-footer {
@@ -126,8 +139,8 @@ footer.page-footer {
 }
 #highlight-reel {
   padding: 0;
-  margin-left: 5%;
-  margin-top: 15%;
+  /*margin-left: 5%;*/
+  /*margin-top: 15%;*/
 }
 /*.highlight-reel video {
   margin-top: 10%;

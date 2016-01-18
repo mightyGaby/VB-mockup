@@ -13,6 +13,8 @@
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -23,15 +25,16 @@
     <div class="nav-wrapper container">
       <a href="#!" class="brand-logo">VERONICA BRUCE</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#index-banner">Video & Audio</a></li>
+        <li><a href="#landing">Video & Audio</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#credentials">Resume</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="http://www.imdb.com/name/nm3400363/?ref_=fn_al_nm_1" target="_blank" class="socicon-imdb"></a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#index-banner">Video & Audio</a></li>
+        <li><a href="#landing">Video & Audio</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#credentials">Resume</a></li>
         <li><a href="#about">About</a></li>
@@ -57,32 +60,45 @@
       <div class="section no-pad-bot">
         <div class="container">
           <div class="row">
-            <h1 class="header left white-text text-lighten-2">Veronica Bruce</h1>
+            <h1 class="header  white-text text-lighten-2 center">Veronica Bruce</h1>
+            <h5 class="col s12 center">actor - comedian</h5>
           </div>
-          <div id="highlight-reel" class="row center hide">
+          <div id="highlight-reel" class="row center z-depth-2 hide">
             <video class="responsive-video" controls>
               <source src="media/VeronicaReel4.mov#t=2" type="video/mp4">
               Your browser does not support the <code>video</code> element.
             </video>
           </div>
-          <div id="standup-reel" class="responsive-video video-container hide">
+          <div id="standup-reel" class="responsive-video video-container z-depth-2 hide">
             <iframe id="popup-youtube-player" width="853" height="480" src="https://www.youtube.com/v/-Xc0OC2x-Dw?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div id="audio-reel" class="row center hide">
+            <audio id="audio" controls>
+              <source src="media/Voiceover.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
           </div>
           <p> Veronica Bruce is an actor and stand up comedian.
 
               Moving from Chicago to Los Angeles, she is open to the possibilities in the new year. </p>
           <div class="media-wrapper row center">
             <div class="col s4">
-              <a href="javascript:;" onClick="showStandup();"><i class="fa fa fa-female "></i>
-              <p  class="header col s12 light">Watch Standup</p>
+              <a class="media-btn" href="javascript:;" onClick="showStandup();">
+                <i class="fa fa fa-female "></i>
+                <p  class="header col s12 light">Watch Standup</p>
+              </a>
             </div>
             <div class="col s4">
-              <a href="javascript:;" onClick="showVideo();"><i class="fa fa-ticket"></i></a>
-              <p  class="header col s12 light">Watch video reel </p>
+              <a class="media-btn" href="javascript:;" onClick="showVideo();">
+                <i class="fa fa-ticket"></i>
+                <p  class="header col s12 light">Watch video reel </p>
+              </a>
             </div>
             <div class="col s4">
-              <i class="fa fa-volume-up "></i>
-              <p class="header col s12 light">Play audio reel </p>
+              <a class="media-btn" href="javascript:;" onClick="playAudio();">
+                <i class="fa fa-volume-up "></i>
+                <p class="header col s12 light">Play audio reel </p>
+              </a>
             </div>
           </div>
         </div>
@@ -120,11 +136,11 @@
 </div>
 
 
-<section id="about" class="full">
+<section class="full">
   <div id="about-blurb" class="parallax-container short valign-wrapper left-tile">
     <div class="section no-pad-bot">
       <div class="container">
-        <div class="row center">
+        <div id="about" class="row center">
           <h3 class="header col s12">About Me</h3>
           <p class="col s12 center "> Veronica Bruce is an actor and stand up comedian.
 
@@ -137,16 +153,16 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="img//art installation2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div id="contact" class="parallax-container short valign-wrapper right-tile">
     <div class="section no-pad-bot">
-        <div class="">
+        <div class="container">
         <div class="row">
           <div class="col s12 center">
-            <h3><i class="mdi-content-send brown-text"></i></h3>
-            <h4>Let's go places</h4>
+            <h3><i class="mdi-content-send white-text"></i></h3>
+            <!-- <h4>Let's go places</h4> -->
             <p class="light">email me (veronicabruce@gmail.com) or message me here!</p>
           </div>
         </div>
@@ -154,16 +170,10 @@
         <form class="col s12">
           <div class="row">
             <div class="input-field col s6">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">First Name</label>
+              <input id="name" type="text" class="validate">
+              <label for="name">Name</label>
             </div>
             <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">Last Name</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
               <input id="email" type="email" class="validate">
               <label for="email">Email</label>
             </div>
@@ -178,7 +188,7 @@
       </div>
       </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="img/art installation2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
 </section>
