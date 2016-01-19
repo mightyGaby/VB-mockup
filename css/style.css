@@ -222,6 +222,9 @@ hr.star-primary:after {
     background-color: bladk;
 }
 
+#about-blurb .parallax {
+  display: none;
+}
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -255,9 +258,25 @@ hr.star-primary:after {
     font-size: 3rem;
   }
 
+  #about-blurb{
+    width: 100%;
+    background-color: transparent;
+    background: transparent;
+  }
+
+  #about-blurb .parallax {
+    display: block;
+  }
+
   #about-blurb h3{
     display: none;
   }
+
+  #about-blurb + .right-tile {
+    display: none;
+  }
+
+
 
   #credentials .parallax-container.left-tile {
     display: none;
