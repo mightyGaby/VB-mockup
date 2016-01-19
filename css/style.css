@@ -250,6 +250,10 @@ hr.star-primary:after {
   #main-headshot + .parallax-container.right-tile h1.header {
     font-size: 3rem;
   }
+
+  #about-blurb h3{
+    display: none;
+  }
 }
 
 .icon-block {
