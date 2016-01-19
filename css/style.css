@@ -48,6 +48,16 @@ p {
   height: 100%;
   min-height: 850px;
 }
+
+.parallax-container.left-tile.med, .parallax-container.right-tile.med {
+/*  width: 50%;
+  float: left;
+  height: 100%;
+  min-height: 650px;
+  max-height: 800px;*/
+  padding: 0;
+}
+
 .landing-content{
   padding-left: 10%;
   margin-top: 5%;
@@ -79,6 +89,14 @@ p {
 #landing .parallax-container.right-tile.dark-overlay{
     background: linear-gradient(#530F00 0%, darkgrey 90%), linear-gradient(to top, slategrey 10%, #5F5452  90%);
     background-blend-mode: screen, difference, lighten;
+}
+
+#landing .parallax-container .no-pad-bot{
+  height: 100%;
+}
+
+.toast-style{
+    background: rgba(0, 0, 0, 0.6);
 }
 
 #contact form {
@@ -127,10 +145,20 @@ p {
 .media-wrapper {
   /*padding-left: 15%;*/
   float: left;
+  width: 100%;
+  padding-bottom: 25px;
 }
 
 .media-wrapper .media-btn {
   color: white;
+  height: auto;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.media-wrapper .media-btn i span.flow-text{
+  display: block;
+  font-size: 14px;
 }
 
 .media-wrapper .media-btn:hover {
@@ -175,12 +203,18 @@ min-width: 100%;
 }
 #resume {
   transform: none;
-  width: 100%;
+  max-width: 100%;
+  max-height: 875px;
+  margin: 0 auto;
 }
 
-#credentials .right-tile {
+#credentials .right-tile div{
   height: auto;
   max-height: 850px;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  overflow-y: hidden;
 }
 
 hr.star-light,
@@ -225,6 +259,13 @@ hr.star-primary:after {
 #about-blurb .parallax {
   display: none;
 }
+
+@media only screen and (min-width : 992px){
+  .toast-style{
+    top: 0;
+  }
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -263,8 +304,10 @@ hr.star-primary:after {
     }
   #main-headshot + .parallax-container.right-tile  {
     min-height: 450px;
+    height: auto;
     /*height: 500px;*/
-    overflow: scroll;
+/*    overflow-y: scroll;
+    overflow-x: visible*/
   }
 
   #main-headshot + .parallax-container.right-tile h1.header {
@@ -304,4 +347,23 @@ hr.star-primary:after {
 }
 .icon-block .material-icons {
   font-size: inherit;
+}
+
+@media all and (min-width: 600px) and (max-width: 900px)  {
+  #credentials .parallax-container.col, #credentials .parallax-container.col div{
+    min-height: 400px;
+    height: 450px;
+    padding: 0;
+  }
+  #credentials .parallax-container.left-tile.col div{
+    max-height: 600px;
+  }
+
+  #credentials .left-tile img{
+    width: 100%;
+  }
+  #credentials .right-tile img{
+    width: 104%;
+    margin-left: -10px;
+  }
 }
