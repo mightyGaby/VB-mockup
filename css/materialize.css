@@ -2932,7 +2932,13 @@ footer.page-footer .footer-copyright i.material-icons{
 }
 
 footer.page-footer .footer-copyright .socicon-imdb{
-font-size: 25px;
+  /*font-size: 25px;*/
+/*  padding: 0;
+*/}
+
+footer.page-footer .footer-copyright a{
+  /*font-size: 25px;*/
+  padding-top: 5px;
 }
 
 table, th, td {
