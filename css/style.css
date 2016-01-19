@@ -153,7 +153,12 @@ p {
   color: white;
   height: auto;
   width: 100%;
-  padding: 5px 0;
+  padding: 15px 0 5px 0;
+  border: 1px solid white;
+}
+
+.media-wrapper .media-btn:hover {
+    border: 1px solid #666B62;
 }
 
 .media-wrapper .media-btn i span.flow-text{
@@ -286,6 +291,10 @@ hr.star-primary:after {
 }
 
 @media only screen and (max-width : 600px) {
+  .media-wrapper .media-btn, .media-wrapper .media-btn:hover {
+    border: none
+  }
+
   #landing .section {
     top: 0;
   }
