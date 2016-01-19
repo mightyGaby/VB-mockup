@@ -180,6 +180,7 @@ min-width: 100%;
 
 #credentials .right-tile {
   height: auto;
+  max-height: 850px;
 }
 
 hr.star-light,
