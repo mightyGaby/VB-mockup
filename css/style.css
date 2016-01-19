@@ -85,6 +85,11 @@ p {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+#contact form .waves-effect.waves-input-wrapper.btn {
+  float: right;
+  margin: 0 20px 20px 0;
+}
+
 #gallery {
   background-image: radial-gradient( transparent, #478282 );
 }
@@ -207,6 +212,15 @@ hr.star-light:after {
     background-color: #fff;
 }
 
+hr.star-primary {
+    border-color: black;
+}
+
+hr.star-primary:after {
+    color: black;
+    background-color: bladk;
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -220,6 +234,20 @@ hr.star-light:after {
 @media only screen and (max-width : 600px) {
   #landing .section {
     top: 0;
+  }
+
+  .parallax-container.left-tile, .parallax-container.right-tile  {
+      min-height: 450px;
+      height: 500px;
+    }
+  #main-headshot + .parallax-container.right-tile  {
+    min-height: 450px;
+    /*height: 500px;*/
+    overflow: scroll;
+  }
+
+  #main-headshot + .parallax-container.right-tile h1.header {
+    font-size: 3rem;
   }
 }
 
