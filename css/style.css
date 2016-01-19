@@ -85,6 +85,10 @@ p {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+#gallery {
+  background-image: radial-gradient( transparent, #478282 );
+}
+
 .parallax img#main-headshot {
   right: 0;
   left: 76%;
@@ -155,14 +159,16 @@ min-width: 100%;
 }
 #about-blurb{
 
-    /*background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to right, #95AD81 0%, #799465 90%);
-      background-blend-mode: screen, multiply, darken;*/
-
-
+    background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to bottom , #828678 0%, #9F9D88 90%);
+      background-blend-mode: screen, multiply, darken;
 }
 #resume {
   transform: none;
   width: 100%;
+}
+
+#credentials .right-tile {
+  height: auto;
 }
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
