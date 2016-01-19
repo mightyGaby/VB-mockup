@@ -146,9 +146,10 @@ footer.page-footer {
   /*margin-left: 5%;*/
   /*margin-top: 15%;*/
 }
-/*.highlight-reel video {
-  margin-top: 10%;
-}*/
+
+.media-wrapper {
+  margin-top: 20px;
+}
 #about-img img{
 min-width: 100%;
   /*min-width: 650px;*/

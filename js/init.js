@@ -16,7 +16,7 @@ function audioInit(){
   // $('.fa-ticket').click(function(){
     $('#audio-reel').removeClass('hide');
     $('#audio-reel').addClass('audio-on');
-    $('.media-btn p').text('Hide audio reel');
+    $('.media-btn .fa-volume-up + p').text('Hide audio reel');
     audio.play();
     // $('#index-banner, .parallax-container').addClass('dark-overlay');
     // })
@@ -27,14 +27,25 @@ function playAudio(){
 }
 
 function showStandup() {
-  // $('#standup-reel').click(function(){
     console.log('hello')
     $('#standup-reel').removeClass('hide');
     $('#index-banner, .parallax-container').addClass('dark-overlay');
-    // toggleVideo('hide');
-  // })
+      toggleYouTube('play');
 }
 
+function toggleYouTube(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("standup-reel");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    var control;
+    // div.style.display = state == 'hide' ? 'none' : '';
+    if(state == 'play'){
+      control = 'playVideo';
+    }else if (state == 'pause') {
+      control = 'pauseVideo';
+    }
+    iframe.postMessage('{"event":"command","func":"' + control + '","args":""}', '*');
+}
 
 function hideVideo(){
   $(document).mouseup(function (e){
@@ -49,7 +60,7 @@ function hideVideo(){
       if (!video.paused) {
           video.pause();
       }
-      $('#popup-youtube-player')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      toggleYouTube('pause');
     }
 
     if (!audioContainer.is(e.target) // if the target of the click isn't the container...
@@ -57,7 +68,7 @@ function hideVideo(){
         &&  audioContainer.hasClass('audio-on')){
           audio.pause();
           audioContainer.addClass('hide');
-          $('.media-btn p').text('Play audio reel');
+          $('.media-btn .fa-volume-up + p').text('Play audio reel');
     }
 
   });
@@ -65,6 +76,7 @@ function hideVideo(){
 
 
 (function($){
+
 
   $('#textarea1').val(' ');
   $('#textarea1').trigger('autoresize');
