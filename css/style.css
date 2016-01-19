@@ -237,6 +237,10 @@ hr.star-primary:after {
     top: 0;
   }
 
+  nav .brand-logo{
+    font-size: 1.5rem;
+    left: 30%;
+  }
   .parallax-container.left-tile, .parallax-container.right-tile  {
       min-height: 450px;
       height: 500px;
@@ -252,6 +256,10 @@ hr.star-primary:after {
   }
 
   #about-blurb h3{
+    display: none;
+  }
+
+  #credentials .parallax-container.left-tile {
     display: none;
   }
 }
