@@ -150,6 +150,11 @@ footer.page-footer {
 .media-wrapper {
   margin-top: 20px;
 }
+
+.nav-wrapper{
+  margin: 0 5%;
+}
+
 #about-img img{
 min-width: 100%;
   /*min-width: 650px;*/
@@ -171,6 +176,37 @@ min-width: 100%;
 #credentials .right-tile {
   height: auto;
 }
+
+hr.star-light,
+hr.star-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 2px;
+    text-align: center;
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -.1em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    /*font-size: 2em;*/
+}
+
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-light:after {
+    color: #fff;
+    background-color: #fff;
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;

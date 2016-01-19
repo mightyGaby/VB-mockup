@@ -16,7 +16,6 @@
   <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-
 </head>
 <body>
 
@@ -24,7 +23,7 @@
   <div class="navbar-fixed white">
 
   <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
+    <div class="nav-wrapper">
       <a href="#!" class="brand-logo">VERONICA BRUCE</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#landing">Video & Audio</a></li>
@@ -64,6 +63,7 @@
         <div class="container">
           <div class="row">
             <h1 class="header  white-text text-lighten-2 center">Veronica Bruce</h1>
+            <hr class="star-light">
             <h5 class="col s12 center">actor - comedian</h5>
           </div>
           <div id="highlight-reel" class="row center z-depth-2 hide">
@@ -178,11 +178,11 @@
           <div class="col s12 center">
             <h3><i class="mdi-content-send white-text"></i></h3>
             <h4>Let's go places</h4>
-            <p class="light">email me (veronicabruce@gmail.com) or message me here!</p>
+            <h5 class="light">email me at <a href="mailto:veronicabruce@gmail.com">veronicabruce@gmail.com</a> or message me here!</h5>
           </div>
         </div>
         <div id="contact" class="row">
-        <form class="col s12">
+        <form class="col s12" method="POST" name="contactform" action="contact-form-handler.php">
           <div class="row">
             <div class="input-field col s6">
               <input id="name" type="text" class="validate">
@@ -199,6 +199,7 @@
               <label for="textarea1">Textarea</label>
             </div>
           </div>
+          <input type="submit" value="Submit"><br>
         </form>
       </div>
       </div>
@@ -312,12 +313,6 @@
           </p> -->
 
         </div>
-        <div class="col l3 s12">
-          <ul>
-            <li><a class="white-text" href="mailto:veronicabruce@gmail.com"><i class="material-icons white-text">email</i></a></li>
-            <li><a  href="http://www.imdb.com/name/nm3400363/?ref_=fn_al_nm_1" target="_blank" class="socicon-imdb white-text"></a></li>
-          </ul>
-        </div>
         <!-- <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
@@ -331,7 +326,10 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Veronica Bruce | 2015
+        <div class="row">
+          <div class="col s10">Veronica Bruce | 2015</div>
+          <div class="col s2"><a class="white-text" href="mailto:veronicabruce@gmail.com"><i class="material-icons white-text">email</i></a><a  href="http://www.imdb.com/name/nm3400363/?ref_=fn_al_nm_1" target="_blank" class="socicon-imdb white-text"></a></div>
+        </div>
       </div>
     </div>
   </footer>
