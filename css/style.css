@@ -233,11 +233,24 @@ hr.star-primary:after {
   #landing .section {
     top: 10%;
   }
+
+  nav .brand-logo{
+    /*font-size: 1.5rem;*/
+    left: 20%;
+  }
+  nav .dropdown-button{
+    float: right;
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #landing .section {
     top: 0;
+  }
+
+  #dropdown1 li{
+    color: slategrey;
   }
 
   nav .brand-logo{
@@ -276,7 +289,10 @@ hr.star-primary:after {
     display: none;
   }
 
-
+ #dropdown1 .socicon-imdb {
+    font-size: 40px;
+    padding-top: 0;
+  }
 
   #credentials .parallax-container.left-tile {
     display: none;
