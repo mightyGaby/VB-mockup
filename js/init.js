@@ -16,7 +16,7 @@ function audioInit(){
   // $('.fa-ticket').click(function(){
     $('#audio-reel').removeClass('hide');
     $('#audio-reel').addClass('audio-on');
-    $('.media-btn .fa-volume-up + p').text('Hide audio reel');
+    $('.media-btn .fa-volume-up + p').text('Pause voice reel');
     audio.play();
     // $('#index-banner, .parallax-container').addClass('dark-overlay');
     // })
@@ -68,7 +68,7 @@ function hideVideo(){
         &&  audioContainer.hasClass('audio-on')){
           audio.pause();
           audioContainer.addClass('hide');
-          $('.media-btn .fa-volume-up + p').text('Play audio reel');
+          $('.media-btn .fa-volume-up + p').text('Listen to voice reel');
     }
 
   });
