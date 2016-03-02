@@ -33,23 +33,34 @@ p {
   padding-top: 5px;
 }
 .icon-line:before{
-  width: 30px;
-  content: '_';
-  border-bottom: 1px solid white;
-  display: inline;
+  width: 120px;
+  content: '-';
+  color: transparent;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  text-decoration: line-through;
+  height: 10px;
+  padding-bottom: 15px;
+  margin-right: -5px;
 }
 .icon-line:after{
-  width: 30px;
-  content: '_';
-  border-bottom: 1px solid white;
-  display: inline;
+  width: 120px;
+  content: '-';
+  /* line-height: 2rem; */
+  color: transparent;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  text-decoration: line-through;
+  height: 10px;
+  padding-bottom: 15px;
+  margin-left: -5px;
 }
 .representation{
   font-size: .7rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   /* margin-bottom: 0; */
-  margin-top: 5px;
+  margin-top: 15px;
 }
 .representation + h5 {
   margin-top: 10px;
