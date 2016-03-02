@@ -32,16 +32,46 @@ p {
   font-size: 30px;
   padding-top: 5px;
 }
-
-.representation{
-  font-size: 1rem;
-/*  font-weight: 500;
-*/  letter-spacing: 3px;
-/*  margin-bottom: 0;
-*/  margin-top: 5px;
+.icon-line:before{
+  width: 30px;
+  content: '_';
+  border-bottom: 1px solid white;
+  display: inline;
 }
-.representation + h4 {
+.icon-line:after{
+  width: 30px;
+  content: '_';
+  border-bottom: 1px solid white;
+  display: inline;
+}
+.representation{
+  font-size: .7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  /* margin-bottom: 0; */
   margin-top: 5px;
+}
+.representation + h5 {
+  margin-top: 10px;
+}
+.rep-contact.row:nth-of-type(even){
+  margin: 0 5%;
+}
+.rep-contact h5 {
+  margin-bottom: 0;
+}
+.rep-contact i{
+  padding-right: 5px;
+}
+.rep-contact p{
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+h5.subhead {
+  text-transform: uppercase;
+/*  margin-top: 0;
+*/  letter-spacing: 1px;
+  font-size: 1.5rem
 }
 .parallax-container {
   min-height: 380px;

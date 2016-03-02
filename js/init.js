@@ -2,7 +2,7 @@ var video = $(".responsive-video")[0]; // id or class of your <video> tag
 var audio = document.getElementById("audio");
 
 function toggleInfo(){
-    $('.rep-contact').removeClass('hide');
+    // $('.rep-contact').removeClass('hide');
     $('.intro').addClass('hide');
   console.log('info')
 }
@@ -71,7 +71,7 @@ function hideVideo(){
           video.pause();
       }
       toggleYouTube('pause');
-      $('.rep-contact').addClass('hide');
+      // $('.rep-contact').addClass('hide');
       $('.intro').removeClass('hide');
     }
 
@@ -81,7 +81,7 @@ function hideVideo(){
           audio.pause();
           audioContainer.addClass('hide');
           $('.media-btn .fa-volume-up + p').text('Listen to voice reel');
-          $('.rep-contact').addClass('hide');
+          // $('.rep-contact').addClass('hide');
           $('.intro').removeClass('hide');
     }
 
