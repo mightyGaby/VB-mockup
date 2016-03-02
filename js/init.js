@@ -1,18 +1,21 @@
 var video = $(".responsive-video")[0]; // id or class of your <video> tag
 var audio = document.getElementById("audio");
 
-function showVideo(){
-  // $('.fa-ticket').click(function(){
-    $('#highlight-reel').removeClass('hide');
-    $('#index-banner, .parallax-container').addClass('dark-overlay');
-      if (video.paused) {
-          video.play();
-      }
-    // })
-
-  Materialize.toast('Click or tap anywhere to close video reel', 2000, 'toast-style');
+function toggleInfo(){
+    $('.rep-contact').removeClass('hide');
+    $('.intro').addClass('hide');
+  console.log('info')
 }
 
+function showVideo(){
+  $('#highlight-reel').removeClass('hide');
+  $('#index-banner, .parallax-container').addClass('dark-overlay');
+  if (video.paused) {
+      video.play();
+  }
+  Materialize.toast('Click or tap anywhere to close video reel', 2000, 'toast-style');
+  toggleInfo();
+}
 
 function audioInit(){
   // $('.fa-ticket').click(function(){
@@ -23,6 +26,7 @@ function audioInit(){
     // $('#index-banner, .parallax-container').addClass('dark-overlay');
     // })
     Materialize.toast('Click or tap anywhere to close voice reel', 2000, 'toast-style');
+    toggleInfo();
 }
 
 function playAudio(){
@@ -35,7 +39,7 @@ function showStandup() {
     $('#index-banner, .parallax-container').addClass('dark-overlay');
       toggleYouTube('play');
   Materialize.toast('Click or tap anywhere to close stand-up reel', 2000, 'toast-style');
-
+  toggleInfo();
 }
 
 function toggleYouTube(state) {
@@ -50,6 +54,7 @@ function toggleYouTube(state) {
       control = 'pauseVideo';
     }
     iframe.postMessage('{"event":"command","func":"' + control + '","args":""}', '*');
+    toggleInfo();
 }
 
 function hideVideo(){
@@ -66,6 +71,8 @@ function hideVideo(){
           video.pause();
       }
       toggleYouTube('pause');
+      $('.rep-contact').addClass('hide');
+      $('.intro').removeClass('hide');
     }
 
     if (!audioContainer.is(e.target) // if the target of the click isn't the container...
@@ -74,9 +81,20 @@ function hideVideo(){
           audio.pause();
           audioContainer.addClass('hide');
           $('.media-btn .fa-volume-up + p').text('Listen to voice reel');
+          $('.rep-contact').addClass('hide');
+          $('.intro').removeClass('hide');
     }
 
   });
+}
+
+function clearform()
+{
+    document.getElementById("name").value=""; //don't forget to set the textbox id
+    document.getElementById("email").value="";
+    document.getElementById("message").value="";
+    document.getElementById("human").value="";
+
 }
 
 
@@ -98,8 +116,8 @@ function hideVideo(){
     $('#credentials .parallax-container.left-tile > div').addClass('parallax');
   }
 
-  $('#textarea1').val(' ');
-  $('#textarea1').trigger('autoresize');
+  $('#message').val(' ');
+  $('#message').trigger('autoresize');
 
   $(function(){
     // showVideo();

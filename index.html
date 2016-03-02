@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- 
+==========================================================================
+This site was designed and built by Gaby Ruiz-Funes for Veronica Bruce
+using the Materialize Framework under the MIT License (MIT)
+
+www.mightygaby.com // twitter: @themightyGaby // github: mightyGaby
+==========================================================================
+ -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <title>Veronica Bruce</title>
   <link rel="icon"
       type="image/png"
-      href="img/VB5.jpg">
+      href="img/favicon.jpg">
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,7 +32,7 @@
 
   <nav class="white" role="navigation">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">VERONICA BRUCE</a>
+      <a href="#landing" class="brand-logo left">VERONICA BRUCE</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#landing">Video & Audio</a></li>
         <li><a href="#gallery">Gallery</a></li>
@@ -43,16 +51,6 @@
         <li><a href="http://www.imdb.com/name/nm3400363/?ref_=fn_al_nm_1" target="_blank" class="socicon-imdb"></a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-<!--       <a class='dropdown-button btn hide-on-large-only right-align' href='#' data-activates='dropdown1'>Navigation</a>
-
-      <ul id="dropdown1" class='dropdown-content'>
-        <li><a href="#landing">Video & Audio</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#credentials">Resume</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="http://www.imdb.com/name/nm3400363/?ref_=fn_al_nm_1" target="_blank" class="socicon-imdb"></a></li>
-    </ul> -->
     </div>
   </nav>
 </div>
@@ -72,15 +70,24 @@
       <div class=" no-pad-bot">
         <div class="container">
           <div class="row">
+            <h5 class="col s12 center representation">LW1/Light Wilhelmina Talent Agency</h5>
             <h1 class="header  white-text text-lighten-2 center">Veronica Bruce</h1>
             <hr class="star-light">
-            <h5 class="col s12 center">actor - comedian</h5>
           </div>
+          <!--  video containers -->            
           <div id="highlight-reel" class="row center z-depth-2 hide">
-            <video class="responsive-video" controls>
-              <source src="media/VeronicaReel4.mov#t=2" type="video/mp4">
+            <video class="responsive-video" controls="controls" width="640" height="360">
+              <source src="media/VeronicaReel4.mov#t=2" type="video/mp4" />
+                <source src="media/VeronicaReel4.ogg#t=2" type="video/ogg" />
+                <span title="No video playback capabilities, please download the video below">Veronica Bruce Highlights</span>
               Your browser does not support the <code>video</code> element.
+              <p>
+                <strong>Download video:</strong> <a href="media/VeronicaReel4.mov#t=2">MP4 format</a> | <a href="media/VeronicaReel4.ogg">Ogg format</a>
+              </p>
             </video>
+            <div class="responsive-video video-container hide">
+              <iframe width="600" height="auto" src="https://www.youtube.com/embed/-Xc0OC2x-Dw?enablejsapi=1&fs=1" frameborder="0" allowfullscreen></iframe>
+            </div>
           </div>
           <div id="standup-reel" class="responsive-video video-container z-depth-2 hide">
             <iframe width="600" height="auto" src="https://www.youtube.com/embed/-Xc0OC2x-Dw?enablejsapi=1&fs=1" frameborder="0" allowfullscreen></iframe>
@@ -91,7 +98,20 @@
             Your browser does not support the audio element.
             </audio>
           </div>
-          <p class="center">Veronica has acted in FOX's Empire, NBC's Chicago Fire, and in commercials. Her stand-up comedy chronicles her strip club outings and dating life - with sass and excessive modesty.</p>
+          <!--  end video containers -->
+          <div class="row">
+            <div class="intro">
+              <h4 class="center">actor - comedian</h4>       
+              <p class="center">Veronica has acted in FOX's Empire, NBC's Chicago Fire, and in commercials. Her stand-up comedy chronicles her strip club outings and dating life - with sass and excessive modesty.</p>
+            </div>
+            <div class="rep-contact hide">
+              commercial, theatrical, and voice over representation:
+              LW1/Light Wilhelmina Talent Agency
+              9378 Wilshire Blvd., Suite 310
+              Beverly Hills, CA.  90212
+              310-601-2532
+            </div>
+          </div>
           <div class="media-wrapper center">
             <div class="col s4 m12 l4">
               <a class="media-btn btn transparent z-depth-0" href="javascript:;" onClick="showVideo();">
@@ -117,7 +137,7 @@
 
 <div class="section no-pad-bot">
   <div class="row">
-    <h3 class="header col s12 center">Photo Gallery</h3>
+    <h3 class="section-header col s12 center">Photo Gallery</h3>
     <div id="gallery" class="col s12">
       <div class="carousel">
         <a class="carousel-item" href="#one!"><img src="img/VB1.jpg"></a>
@@ -132,7 +152,7 @@
 
 
 <div id="credentials" class="full row">
-  <h3 class="header col s12 center">Resume</h3>
+  <h3 class="section-header col s12 center">Resume</h3>
   <div class="parallax-container valign-wrapper left-tile med col s12 m5 l6">
     <div class="parallax"><img src="img/VB6.jpg" alt="Unsplashed background img 2"></div>
   </div>
@@ -146,7 +166,7 @@
 
 
 <section class="full">
-  <h3 id="about" class="header col s12 center">About Me</h3>
+  <h3 id="about" class="section-header col s12 center">About Me</h3>
   <div id="about-blurb" class="parallax-container short valign-wrapper left-tile">
     <div class=" no-pad-bot">
       <div class="container">
@@ -173,72 +193,77 @@
 
 </section>
 
-<section>
-  <h3 class="header col s12 center">Contact</h3>
-  <div class="parallax-container short valign-wrapper">
+  <h3 class="section-header col s12 center">Contact</h3>
+
+<div>
+  <div class="parallax-container med valign-wrapper">
     <div class="full no-pad-bot">
         <div class="container">
         <div class="row">
           <div class="col s12 center">
-            <h3><i class="mdi-content-send white-text"></i></h3>
-            <h5 class="contact">email me at <a href="mailto:veronicabruce@gmail.com">veronicabruce@gmail.com</a> or message me here!</h5>
+          <h3><i class="mdi-content-send white-text"></i></h3>
+
+            <div class="represenation">
+            <h5>commercial, theatrical, and voice over representation</h5>
+            <h4>LW1/Light Wilhelmina Talent Agency</h4>
+            <p>9378 Wilshire Blvd. Suite 310<br>
+            Beverly Hills, CA.  90212<br>
+            310-601-2532</p>
+            </div>
+            <h5 class="contact">email me at <a class="teal-text" style="font-weight: 400" href="mailto:veronicabruce@gmail.com">veronicabruce@gmail.com</a> or message me here!</h5>
           </div>
         </div>
         <div id="contact" class="row">
         <form class="col s12" method="POST" name="contactform" action="contact-form-handler.php">
           <div class="row">
             <div class="input-field col s6">
-              <input id="name" type="text" class="validate">
+              <input id="name" name="name" type="text" class="validate">
               <label for="name">Name</label>
             </div>
             <div class="input-field col s6">
-              <input id="email" type="email" class="validate">
+              <input id="email" name="email" type="email" class="validate">
               <label for="email">Email</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
-              <label for="textarea1">Message</label>
+              <textarea id="message" name="message" class="materialize-textarea" length="120"></textarea>
+              <label for="message">Message</label>
             </div>
           </div>
-          <input class="waves-effect waves-light btn" type="submit" value="Submit"><br>
+          <div class="row">
+            <div class="input-field col s7 m6 l5 push-l5 push-m3 ">
+              <label for"human">*Hi Human, what is 2+2?</label>
+              <input  id="human" name="human">
+            </div>
+            <div class="input-field col s5 l7 m6">
+              <input class="waves-effect waves-light btn" name="submit" type="submit" value="Submit" onClick="clearform();"><br>
+            </div>
+          </div>
         </form>
       </div>
       </div>
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 2"></div>
   </div>
-</section>
-
-      <div class="row">
-        <div class="col s12 center">
-          <!-- <h4>Let's go places</h4> -->
-          <!-- <p class="light">Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p> -->
-        </div>
-      </div>
-      
+</div>
 
   <footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <!-- <h5 class="white-text">Optional Bio/Tagline</h5> -->
-          <!-- <p class="grey-text text-lighten-4">
-            Veronica Bruce is an actor and stand up comedian.
-
-            Moving from Chicago to Los Angeles, she is open to the possibilities in the new year.
-
-          </p> -->
-
-        </div>
+        <div class="white-text light center">VERONICA BRUCE</div>
+        <div class="grey-text light center">LW1/Light Wilhelmina Talent Agency</div>
+        <hr class="star-light">
+      </div>
+      <div class="row center">
+        <a class="white-text valign" href="mailto:veronicabruce@gmail.com"><i class="material-icons white-text" style="font-size:28px">email</i></a>
+        <a  href="http://www.imdb.com/name/nm3400363/?ref_=fn_al_nm_1" target="_blank" class="socicon-imdb white-text valign"></a>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        <div class="row">
-          <div class="col s9 valign-wrapper">VERONICA BRUCE | 2015</div>
-          <div class="col s3 valign-wrapper"><a class="white-text valign" href="mailto:veronicabruce@gmail.com"><i class="material-icons white-text">email</i></a><a  href="http://www.imdb.com/name/nm3400363/?ref_=fn_al_nm_1" target="_blank" class="socicon-imdb white-text valign"></a></div>
+        <div class="row center">
+          <div class="">Designed and built by <a class="" href="https://mightygaby.com"> Gaby Ruiz-Funes </a> using <a class="" href="http://materializecss.com/"> Materialize</a></div>
         </div>
       </div>
     </div>

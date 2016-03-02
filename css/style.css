@@ -32,6 +32,17 @@ p {
   font-size: 30px;
   padding-top: 5px;
 }
+
+.representation{
+  font-size: 1rem;
+/*  font-weight: 500;
+*/  letter-spacing: 3px;
+/*  margin-bottom: 0;
+*/  margin-top: 5px;
+}
+.representation + h4 {
+  margin-top: 5px;
+}
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -50,9 +61,7 @@ p {
 }
 
 .parallax-container.left-tile.med, .parallax-container.right-tile.med {
-/*  width: 50%;
-  float: left;
-  height: 100%;*/
+
   height: 650px;
   min-height: 800px;
   padding: 0;
@@ -82,6 +91,11 @@ p {
 #landing .parallax-container.right-tile {
   background: linear-gradient(#530F00 0%, grey 90%), linear-gradient(to top, grey 0%, #F29C8C 90%);
     background-blend-mode: screen, difference, lighten;
+
+background: -ms-linear-gradient(#530F00, #F29C8C);/*For IE10*/
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#530F00', endColorstr='#F29C8C');/*For IE7-8-9*/ 
+    height: 1%;/*For IE7*/ 
+
 }
 .dark-overlay{
   background: rgba(0, 0, 0, 0.4);
@@ -123,10 +137,6 @@ p {
   background: linear-gradient(#120401 0%, grey 90%), linear-gradient(to bottom, grey 0%, #F29C8C 90%);
     background-blend-mode: screen, difference, lighten;
 
-    /*background: linear-gradient(#120401 0%, slategrey 90%), linear-gradient(to top,  #F29C8C 0%, grey 90%);
-      background-blend-mode: screen, difference, lighten;*/
-
-
 }
 #index-banner .section  .row h1.header{
   font-weight: 100;
@@ -136,14 +146,17 @@ p {
   height: 500px;
 }
 
+.parallax-container.med{
+  min-height: 450px;
+  height: 700px;
+}
+
 .fa-video-camera, .fa-volume-up, .fa-ticket, .fa-female  {
   font-size: 2.5em;
-  /*margin-left: 10%;*/
-  /*margin-right: 30px;*/
+
 }
 
 .media-wrapper {
-  /*padding-left: 15%;*/
   float: left;
   width: 100%;
   padding-bottom: 25px;
@@ -199,11 +212,6 @@ footer.page-footer {
 
 #about-img img{
 min-width: 100%;
-  /*min-width: 650px;*/
-  /*background-image: url('../img/andy in LA.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -250px;*/
 }
 #about-blurb{
 
@@ -217,14 +225,24 @@ min-width: 100%;
   margin: 0 auto;
 }
 
+h3.section-header.col.s12{
+  margin: 0;
+  padding: 15px 0;
+             -moz-box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
+            -webkit-box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
+            box-shadow: inset 0 8px 8px -8px #696868, inset 0 -8px 8px -8px #696868;
+
+}
 #credentials .right-tile div{
   height: auto;
+  z-index: -1;
   max-height: 850px;
   padding: 0;
   width: 100%;
   text-align: center;
   overflow-y: hidden;
 }
+
 
 hr.star-light,
 hr.star-primary {
@@ -253,8 +271,8 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #fff;
-}
+/*    background-color: #fff;
+*/}
 
 hr.star-primary {
     border-color: black;
@@ -286,15 +304,32 @@ hr.star-primary:after {
 
   nav .brand-logo{
     /*font-size: 1.5rem;*/
-    left: 20%;
-  }
+/*    left: 20%;
+*/  }
   nav .dropdown-button{
     float: right;
     margin-top: 10px;
   }
+
+   #nav-mobile .socicon-imdb {
+    font-size: 35px;
+    padding-top: 0;
+  }
 }
 
 @media only screen and (max-width : 600px) {
+
+
+  h3.section-header.col.s12{
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  #credentials .right-tile {
+  border-top: 1px solid #9F9D88;
+  border-bottom: 1px solid #9F9D88;
+  box-shadow: 2px 2px 8px #828678;
+}
   .media-wrapper .media-btn, .media-wrapper .media-btn:hover {
     border: none
   }
@@ -309,8 +344,14 @@ hr.star-primary:after {
 
   nav .brand-logo{
     font-size: 1.5rem;
-    left: 25%;
+/*    left: 25%;
+*/  }
+  
+  #contact form .waves-effect.waves-input-wrapper.btn {
+    width: 120px;
+    margin-right: 0;
   }
+
   .parallax-container.left-tile, .parallax-container.right-tile  {
       min-height: 450px;
       height: 500px;
@@ -349,11 +390,6 @@ hr.star-primary:after {
 
   #about-blurb + .right-tile {
     display: none;
-  }
-
- #nav-mobile .socicon-imdb {
-    font-size: 40px;
-    padding-top: 0;
   }
 
   #credentials .parallax-container.left-tile {

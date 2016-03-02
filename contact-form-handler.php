@@ -1,51 +1,21 @@
 <?php
-$errors = '';
-$myemail = 'gabsmallnmighty@gmail.com';//<-----Put Your email address here.
-if(empty($_POST['name'])  ||
-   empty($_POST['email']) ||
-   empty($_POST['message']))
-{
-    $errors .= "\n Error: all fields are required";
-}
-
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$message = $_POST['textarea1'];
-
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-$email_address))
-{
-    $errors .= "\n Error: Invalid email address";
-}
-
-if( empty($errors))
-{
-	$to = $myemail;
-	$email_subject = "Contact form submission: $name";
-	$email_body = "You have received a new message. ".
-	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message";
-
-	$headers = "From: $myemail\n";
-	$headers .= "Reply-To: $email_address";
-
-	mail($to,$email_subject,$email_body,$headers);
-	//redirect to the 'thank you' page
-	header('Location: contact-form-thank-you.html');
-}
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $from = 'From: Veronica Bruce'; 
+    $to = 'veronicabruce@gmail.com'; 
+    $subject = 'You have a new message from vcbruce.com';
+    $human = $_POST['human'];
+            
+    $body = "$name ($email) sent you the following message:\n $message";
+               
+if ($_POST['submit'] && ($human == '4' || $human == 'four' || $human == 'Four' || $human == 'FOUR' ) ){                 
+        if (mail ($to, $subject, $body, $from)) { 
+        header('Location: index.html#contact');
+        } else { 
+            echo '<p>Oh no! Looks like a mysterious technology glitch. Please <a href="vcbruce.com#contact">go back</a> and try again!</p>'; 
+        } 
+    } else if ($_POST['submit'] && ($human != '4' || $human != 'four' || $human != 'Four' || $human != 'FOUR' )) {
+        echo '<p>Oh no! Looks like you are either a spam bot or the unfortunate victim of a mysterious technology glitch. Please <a href="vcbruce.com#contact">go back</a> and try again!</p>'; 
+    }
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-	<title>Contact form handler</title>
-</head>
-
-<body>
-<!-- This page is displayed only if there is some error -->
-<?php
-echo nl2br($errors);
-?>
-
-
-</body>
-</html>
