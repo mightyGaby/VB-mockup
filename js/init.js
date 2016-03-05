@@ -3,7 +3,7 @@ var audio = document.getElementById("audio");
 
 function toggleInfo(){
     // $('.rep-contact').removeClass('hide');
-    $('.intro').addClass('hide');
+    $('.center.intro').addClass('hiddentext');
   console.log('info')
 }
 
@@ -38,7 +38,7 @@ function showStandup() {
     $('#standup-reel').removeClass('hide');
     $('#index-banner, .parallax-container').addClass('dark-overlay');
       toggleYouTube('play');
-  Materialize.toast('Click or tap anywhere to close stand-up reel', 2000, 'toast-style');
+  // Materialize.toast('Click or tap anywhere to close stand-up reel', 2000, 'toast-style');
   toggleInfo();
 }
 
@@ -54,7 +54,7 @@ function toggleYouTube(state) {
       control = 'pauseVideo';
     }
     iframe.postMessage('{"event":"command","func":"' + control + '","args":""}', '*');
-    toggleInfo();
+    // toggleInfo();
 }
 
 function hideVideo(){
@@ -72,7 +72,7 @@ function hideVideo(){
       }
       toggleYouTube('pause');
       // $('.rep-contact').addClass('hide');
-      $('.intro').removeClass('hide');
+      $('.intro').removeClass('hiddentext');
     }
 
     if (!audioContainer.is(e.target) // if the target of the click isn't the container...
@@ -82,7 +82,7 @@ function hideVideo(){
           audioContainer.addClass('hide');
           $('.media-btn .fa-volume-up + p').text('Listen to voice reel');
           // $('.rep-contact').addClass('hide');
-          $('.intro').removeClass('hide');
+          $('.intro').removeClass('hiddentext');
     }
 
   });
